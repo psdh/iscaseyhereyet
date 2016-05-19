@@ -6,10 +6,10 @@
  -->
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
+    <title>Is Casey here yet?</title>
     <style>
       body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-family: "Roboto", "Lucida Grande", Tahoma, sans-serif;
         font-size: 100%;
       }
       #status {
@@ -17,20 +17,14 @@
         white-space: pre;
         text-overflow: ellipsis;
         overflow: hidden;
-        max-width: 400px;
+        max-width: 600px;
       }
     </style>
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
     <script src="popup.js"></script>
   </head>
   <body>
     <div id="status"></div>
-    <img id="image-result" hidden>
+    <a id="vid_a" href="" target="_blank"><iframe id="video-result" hidden></iframe></a>
   </body>
 </html>

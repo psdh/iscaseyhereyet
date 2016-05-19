@@ -1,21 +1,16 @@
 {
   "manifest_version": 2,
 
-  "name": "Youtube Comment Cleaner",
-  "description": "This extension cleans youtube of stupid comments",
+  "name": "Is Casey here yet?",
+  "description": "This extension checks for the latest video on Casey Neistat's youtube channel",
   "version": "1.0",
 
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html",
-    "default_title": "This is what we are looking for"
+    "default_title": "quicky query Casey's latest content"
   },
-  "content_scripts": [ {
-    "js": ["popup.js"],
-    "matches": ["http://youtube.com/*", "https://youtube.com/*"]
-    }],
   "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
+    "activeTab"
   ]
 }
